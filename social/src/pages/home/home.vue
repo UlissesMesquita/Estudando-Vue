@@ -1,14 +1,6 @@
 <template>
 
-
-
-
-
-
-
-
-
-
+<h2>Social</h2>
 
 </template>
 
@@ -24,6 +16,8 @@ export default {
 </script>
 
 <style scoped>
-
+h2{
+  text-align: center;
+}
 </style>
 
