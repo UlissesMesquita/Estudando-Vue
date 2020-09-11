@@ -11,8 +11,25 @@
       <div class="row">
         <grid-vue tamanho="4">
           
-          <card-menu-vue nome="Ulisses Mesquita" desc="Desenvolvedor"></card-menu-vue>
+          <card-menu-vue>
+            <div class="row valign-wrapper">
+              <grid-vue tamanho="4">
+                  <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </grid-vue>
+              <grid-vue tamanho="8">
+                  <span class="black-text">
+                  <h5>Ulisses Mesquita</h5>
+                  <h6>Desenvolvedor Web</h6>
+                  </span>
+              </grid-vue>
+            </div>
+          </card-menu-vue>
 
+          <card-menu-vue>
+              <div class="row valign-wrapper">
+                <h1>Teste</h1>
+              </div>
+          </card-menu-vue>
                
 
         </grid-vue>
