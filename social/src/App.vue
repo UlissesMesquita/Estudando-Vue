@@ -10,7 +10,11 @@
 
       <div class="row">
         <grid-vue tamanho="4">
-          Menu
+          
+          <card-menu-vue nome="Ulisses Mesquita" desc="Desenvolvedor"></card-menu-vue>
+
+               
+
         </grid-vue>
 
         <grid-vue tamanho="8">
@@ -36,6 +40,7 @@
     import NavBar from '@/components/layouts/NavBar'
     import FooterVue from '@/components/layouts/FooterVue'
     import GridVue from '@/components/layouts/GridVue'
+    import CardMenuVue from '@/components/layouts/CardMenuVue'
 
 
 //Importação de componentes
@@ -44,7 +49,8 @@ export default {
   components: {
     NavBar,
     FooterVue,
-    GridVue
+    GridVue,
+    CardMenuVue
   }
 }
 </script>
