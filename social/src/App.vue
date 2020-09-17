@@ -30,12 +30,12 @@
                 <h1>Teste</h1>
               </div>
           </card-menu-vue>
-               
 
         </grid-vue>
 
         <grid-vue tamanho="8">
           <router-view/>
+          <card-conteudo-vue></card-conteudo-vue>
         </grid-vue>
       </div>
 
@@ -58,6 +58,7 @@
     import FooterVue from '@/components/layouts/FooterVue'
     import GridVue from '@/components/layouts/GridVue'
     import CardMenuVue from '@/components/layouts/CardMenuVue'
+    import CardConteudoVue from '@/components/social/CardConteudoVue'
 
 
 //Importação de componentes
@@ -67,7 +68,8 @@ export default {
     NavBar,
     FooterVue,
     GridVue,
-    CardMenuVue
+    CardMenuVue,
+    CardConteudoVue
   }
 }
 </script>
