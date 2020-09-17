@@ -2,7 +2,7 @@
 
   <div>
     <card-conteudo-vue>
-      
+
     </card-conteudo-vue>
   </div>         
 

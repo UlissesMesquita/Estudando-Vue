@@ -18,8 +18,8 @@
               </grid-vue>
               <grid-vue tamanho="8">
                   <span class="black-text">
-                  <h5>Ulisses Mesquita</h5>
-                  <h6>Desenvolvedor Web</h6>
+                  <h5>Ulisses</h5>
+                  <h6>Dev. Web</h6>
                   </span>
               </grid-vue>
             </div>
@@ -34,7 +34,7 @@
         </grid-vue>
 
         <grid-vue tamanho="8">
-          <router-view/>
+          <router-view></router-view>
           <card-conteudo-vue></card-conteudo-vue>
         </grid-vue>
       </div>
@@ -46,7 +46,7 @@
     </div>  
   </main>
 
-    <footer-vue cor="green darken-1" logo="Social" descricao="Informações Sobre o Social" ano="2020"/>
+    <footer-vue cor="green darken-1" logo="Social" descricao="Informações Sobre o Social" ano="2020"></footer-vue>
 
 </span>
 </template>
@@ -58,6 +58,7 @@
     import FooterVue from '@/components/layouts/FooterVue'
     import GridVue from '@/components/layouts/GridVue'
     import CardMenuVue from '@/components/layouts/CardMenuVue'
+
 
 
 
