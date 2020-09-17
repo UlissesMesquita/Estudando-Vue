@@ -22,16 +22,13 @@
 </template>
 
 <script>
-//Importação de NavBars
-  //Components - Layouts
-    import CardConteudoVue from '@/components/social/CardConteudoVue'
-
-
-//Importação de componentes
 export default {
-  name: 'Home',
-  components: {
-    CardConteudoVue
+  name: 'CardConteudoVue',
+  props:[],
+  data () {
+    return {
+      
+    }
   }
 }
 </script>
