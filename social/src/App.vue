@@ -14,7 +14,7 @@
           <card-menu-vue>
             <div class="row valign-wrapper">
               <grid-vue tamanho="4">
-                  <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                  <img src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
               </grid-vue>
               <grid-vue tamanho="8">
                   <span class="black-text">
