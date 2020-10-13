@@ -10,7 +10,7 @@
           <label for="textarea1">O que está Acontecendo? </label>
         </grid-vue>
         <p>
-          <button class="btn waves-effect waves-light col s2 offset-s10">Publicar</button>
+          <grid-vue class="btn waves-effect waves-light col" tamanho="2 offset-s10">Publicar</grid-vue>
         </p>
       </div>
 
