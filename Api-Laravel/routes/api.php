@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
+use Illuminate\Support\Facades\Validator;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +24,19 @@ Route::middleware('auth:api')->get('/usuario', function (Request $request) {
 
 Route::post('/cadastro', function (Request $request) {
     $data = $request->all();
+
+
+    
+    $validator = Validator::make($data, [
+        'name' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'password' => ['required', 'string', 'min:5'],
+    ]);
+
+    if($validator->fails()){
+        return $validator->errors();
+    }
+
 
     $user = User::create([
         'name' => $data['name'],
