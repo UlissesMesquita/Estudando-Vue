@@ -1,0 +1,11 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "database": "${workspaceFolder:Api-Laravel}/database/database.sqlite",
+      "name": "DB - Api-Laravel",
+      "group": "DB - Api-Laravel"
+    }
+  ]
+}
