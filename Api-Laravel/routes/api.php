@@ -21,14 +21,17 @@ Route::middleware('auth:api')->get('/usuario', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/teste', function(){
+    return "Olá Mundo de Teste";
+});
+
 
 Route::post('/cadastro', function (Request $request) {
     $data = $request->all();
 
-
     
     $validator = Validator::make($data, [
-        'name' => ['required', 'string', 'max:255'],
+        //'name' => ['required', 'string', 'max:255'],
         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
         'password' => ['required', 'string', 'min:5'],
     ]);
@@ -39,7 +42,7 @@ Route::post('/cadastro', function (Request $request) {
 
 
     $user = User::create([
-        'name' => $data['name'],
+        //'name' => $data['name'],
         'email' => $data['email'],
         'password' => bcrypt($data['password']),
     ]);
