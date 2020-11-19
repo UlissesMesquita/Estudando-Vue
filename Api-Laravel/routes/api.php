@@ -26,28 +26,30 @@ Route::get('/teste', function(){
 });
 
 
-Route::post('/cadastro', function (Request $request) {
+Route::get('/cadastro', function (Request $request) {
     $data = $request->all();
 
     
     $validator = Validator::make($data, [
-        //'name' => ['required', 'string', 'max:255'],
-        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        'password' => ['required', 'string', 'min:5'],
+        'email' => ['required', 'string', 'email', 'max:255'],
+        'password' => ['required', 'string'],
     ]);
 
     if($validator->fails()){
         return $validator->errors();
     }
 
+    if(Auth::attempt(['email'=>$data['email'],['password'=>$data['password']]])){
+        $user = auth()->user();
+        $user->token = $user->CreateToken($user->email)->accessToken;
+        return $user;
+    }
+    else{
+        return false;
+    }
 
-    $user = User::create([
-        //'name' => $data['name'],
-        'email' => $data['email'],
-        'password' => bcrypt($data['password']),
-    ]);
 
-    $user->token = $user->CreateToken($user->email)->accessToken;
 
-    return $user;
+
+
 });
